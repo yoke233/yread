@@ -1,0 +1,26 @@
+{
+    "author": {
+        "name": "yoke",
+        "email": "yoke2012@gmail.com",
+        "url": "http://weibo.com/yokeb"
+    },
+    "name": "yread",
+    "version": "0.3.5",
+    "description": "",
+    "keywords": ["Node.js", "AngularJS", "mongoDB", "yread"],
+    "homepage": "https://github.com/yoke233/yread",
+    "main": "app.js",
+    "engines": {
+        "node": ">=0.10.x"
+    },
+    "dependencies": {
+        "rrestjs": ">=1.x.x",
+        "mongoskin": ">=0.5.X",
+        "marked": ">=0.2.x",
+        "nodemailer": ">=0.3.x",
+        "xss": ">=0.0.3"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}

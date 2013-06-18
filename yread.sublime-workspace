@@ -1,0 +1,327 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"che",
+				"checkTitleDownloadCompleted"
+			],
+			[
+				"ch",
+				"checkNetWorkAndServerResult"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conf/conf.js",
+			"settings":
+			{
+				"buffer_size": 4683,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Dev/github/yread/package.json",
+		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/html5shiv.js",
+		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/jquery.js",
+		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/application.js",
+		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/package.json",
+		"/E/Dev/github/yread/config/config.js",
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/yliu/Desktop/asd.md",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/Themes/WhiteLabel/src/com/res/skins/base/BaseButtonSkin.as",
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/Markdown Preview/sample.md",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/whitelabel_pc/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/whitelabel/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/view/comps/DownloadControls.mxml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/modules/Library.as",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/model/PurchasedTitleVO.as",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/appdata/languages/en#10.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/view/mediators/LibraryViewMediator.as",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/appdata/languages/en.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/modules/Download.as",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/SDK/Main/Source/SonicLibrary/com/sonic/Library.as",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/modules/Library#5.as",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/SDK/Main/Source/SonicLibrary/com/sonic/WsLog#3.as",
+		"/C/Users/yliu/AppData/Roaming/com.bby.cinemanowplayer/Local Store/logs/log_6_4_2013.txt",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/SDK/Main/Source/SonicLibrary/com/sonic/response/Genre.as",
+		"/C/Users/yliu/Desktop/hosts",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/view/comps/DownloadControls#6.mxml",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/view/comps/DownloadControls#7.mxml",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/com/res/view/comps/DownloadControls#5.mxml",
+		"/E/Dev/nginx-1.2.8/conf/nginx.conf",
+		"/C/Users/yliu/Downloads/ThinkAndroid-master/ThinkAndroidDemo/src/com/cat/activity/SplashActivity.java",
+		"/C/Users/yliu/Downloads/ThinkAndroid-master/ThinkAndroidDemo/AndroidManifest.xml",
+		"/E/Dev/LightTPD/conf/lighttpd.conf",
+		"/C/nginx/conf/nginx.conf",
+		"/C/Users/yliu/Downloads/ThinkAndroid-master/ThinkAndroidDemo/src/com/cat/activity/ThinkAndroidBaseActivity.java",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Dev/Watchman 6.2/ArgumentSetting.xml",
+		"/E/Dev/Watchman 6.2/WatchMan 6.2.exe.Config",
+		"/C/Users/yliu/AppData/Local/Apps/2.0/58BHMGVK.KYZ/D4A43MH3.6E1/watc..tion_0000000000000000_0007.0000_536ee11094218f0c/WatchMan.exe.config",
+		"/E/Dev/nginx-1.4.1/conf/nginx.conf",
+		"/E/Dev/Watchman 6.2/WatchMan 6.2.xml",
+		"/C/Users/yliu/Desktop/asdasd",
+		"/C/Users/yliu/Desktop/cc",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/BuildSystem/build.properties",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/bbyus_pc/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/bbyca_pc/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/conf.xml",
+		"/C/Users/yliu/Desktop/add_cmd.reg",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/bbyca/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/bbyus/conf.xml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/MainLoader/src/partners/target/conf.xml",
+		"/C/Users/yliu/Desktop/111/logs/log_4_18_2013.txt",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/Themes/bby/src/com/res/skins/base/BaseButtonSkin.as",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/Dev2/Source/MainLoader/src/com/res/view/LibraryView#6.mxml",
+		"/E/File/RESPlayerV3/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/Themes/bby/src/com/res/skins/MinimizeButtonSkin.mxml",
+		"/C/Users/yliu/AppData/Local/Temp/p4v/HZO-YGLIUPRI_HZO1ENGPPFX1_5629/Engineering/Products/CinemaNow/Flash/RefApp/RESPlayerV3/DevBranch/WhiteLabel/Source/Themes/bby/src/com/res/skins/LeftPanelTopToggleButtonSkin#2.mxml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"读取配置文件的监听端口号，只需修改配置文件即可轻松部署",
+			",",
+			"generate filters data",
+			"generate filters data after",
+			":",
+			" ",
+			"\"",
+			"			",
+			":",
+			"\"",
+			" ",
+			"//\n",
+			"----------------",
+			"thelu",
+			"the",
+			"tv",
+			"genres",
+			"-playTime/1000",
+			"Library Refresh on TimerEven"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\nLIBRARY_GENRES_",
+			"LIBRARY_GENRES_",
+			"=",
+			"",
+			"=",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "conf/conf.js",
+					"settings":
+					{
+						"buffer_size": 4683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1614,
+								1614
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 211.0
+	},
+	"output.git":
+	{
+		"height": 169.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true
+}
