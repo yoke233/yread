@@ -16,11 +16,10 @@
     "dependencies": {
         "rrestjs": ">=1.x.x",
         "mongoskin": ">=0.5.X",
-        "marked": ">=0.2.x",
-        "nodemailer": ">=0.3.x",
-        "xss": ">=0.0.3"
+        "marked": ">=0.2.x"
     },
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "dev": "node app.js -d"
     }
 }

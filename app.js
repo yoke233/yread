@@ -1,6 +1,16 @@
- module.exports.conf = require('./conf/conf'); //详细说明见github上 
- var http = require('http'),
- 	rrest = require('rrestjs'),
- 	server = http.createServer(function(req, res) { //完全原生的node.js手册代码风格，没有学习门槛
- 		res.send('hello world everyone!'); //rrestjs封装了一个res.send方法，用来响应客户端的请求
- 	}).listen(rrest.config.listenPort); //读取配置文件的监听端口号，只需修改配置文件即可轻松部署
+module.exports.conf = require('./conf/conf'); //详细说明见github上 
+var domain = require('domain'),
+    http = require('http'),
+    fs = require('fs'),
+    path = require('path'),
+    zlib = require('zlib');
+var serverDm = domain.create();
+var processPath = path.dirname(process.argv[1]);
+var rrest = require('rrestjs');
+serverDm.run(function () {
+ 	server = http.createServer(function(req, res) {
+        fs.readFile(processPath + '/web/index.html', 'utf8', serverDm.intercept(function (data) {
+            res.send(data);
+        }));
+ 	}).listen(rrest.config.listenPort);
+});
