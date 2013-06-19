@@ -19,15 +19,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 341,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "conf/conf.js",
-			"settings":
-			{
-				"buffer_size": 4683,
+				"buffer_size": 519,
 				"line_ending": "Windows"
 			}
 		}
@@ -35,9 +27,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 219.0,
 		"selected_items":
 		[
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"j",
+				"Format: Javascript"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"node",
+				"Nodejs::Build Completions"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: ",
 				"Package Control: List Packages"
@@ -45,14 +57,6 @@
 			[
 				"fo",
 				"Format: Javascript"
-			],
-			[
-				"for",
-				"Format: Javascript"
-			],
-			[
-				"Package Control: ins",
-				"Package Control: Install Package"
 			],
 			[
 				"mark",
@@ -84,7 +88,23 @@
 	},
 	"file_history":
 	[
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/User/JsFormat.sublime-settings",
+		"/E/Dev/github/yread/web/index.html",
+		"/E/Dev/github/yread/web/js/controllers.js",
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/E/Dev/github/yread/conf/conf.js",
+		"/E/Dev/github/angular-seed/app/index-async.html",
+		"/E/Dev/github/angular-seed/app/js/app.js",
+		"/E/Dev/github/jsgen/app.js",
+		"/E/Dev/github/jsgen/static/js/directives.js",
+		"/E/Dev/github/jsgen/static/js/controllers.js",
+		"/E/Dev/github/jsgen/api/index.js",
+		"/E/Dev/github/jsgen/static/tpl/index.html",
 		"/E/Dev/github/yread/package.json",
+		"/E/Dev/github/jsgen/static/js/app.js",
+		"/E/Dev/github/jsgen/static/index.html",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/html5shiv.js",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/jquery.js",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/application.js",
@@ -156,6 +176,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"	",
+			");\n",
+			"read",
 			"读取配置文件的监听端口号，只需修改配置文件即可轻松部署",
 			",",
 			"generate filters data",
@@ -182,6 +205,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"    ",
 			"\\nLIBRARY_GENRES_",
 			"LIBRARY_GENRES_",
 			"=",
@@ -206,15 +230,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 341,
+						"buffer_size": 519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								341,
-								341
+								519,
+								519
 							]
 						],
 						"settings":
@@ -224,33 +248,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "conf/conf.js",
-					"settings":
-					{
-						"buffer_size": 4683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1614,
-								1614
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
