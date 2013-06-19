@@ -2,10 +2,21 @@
 
 /* Controllers */
 
-function PhoneListCtrl($scope) {
-  $http.get('http://127.0.0.1/web/phones/phones.json').success(function(data) {
+function PhoneListCtrl($scope, $http) {
+  $http.get('web/phones/phones.json').success(function(data) {
     $scope.phones = data;
   });
 
   $scope.orderProp = 'age';
 }
+
+//PhoneListCtrl.$inject = ['$scope', '$http'];
+
+
+function PhoneDetailCtrl($scope, $routeParams, $http) {
+  $http.get('web/phones/' + $routeParams.phoneId + '.json').success(function(data) {
+    $scope.phone = data;
+  });
+}
+
+//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
