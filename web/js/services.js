@@ -4,13 +4,13 @@
 
 angular.module('phonecatServices', ['ngResource']).
 factory('Phone', function($resource) {
-    return $resource('web/phones/:phoneId.json', {}, {
-        query: {
-            method: 'GET',
-            params: {
-                phoneId: 'phones'
-            },
-            isArray: true
-        }
-    });
+	return $resource('/web/phones/:phoneId.json', {}, {
+		query: {
+			method: 'GET',
+			params: {
+				phoneId: 'phones'
+			},
+			isArray: true
+		}
+	});
 });

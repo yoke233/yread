@@ -7,14 +7,14 @@ function PhoneListCtrl($scope, Phone) {
     $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', 'Phone'];
+PhoneListCtrl.$inject = ['$scope', 'Phone'];
 
 
 function PhoneDetailCtrl($scope, $routeParams, Phone) {
     $scope.phone = Phone.get({
         phoneId: $routeParams.phoneId
     }, function(phone) {
-        $scope.mainImageUrl = 'web/' + phone.images[0];
+        $scope.mainImageUrl = '/web/' + phone.images[0];
     });
 
     $scope.setImage = function(imageUrl) {
@@ -22,4 +22,4 @@ function PhoneDetailCtrl($scope, $routeParams, Phone) {
     }
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];
+PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];

@@ -6,8 +6,7 @@ var domain = require('domain'),
     zlib = require('zlib');
 var serverDm = domain.create();
 var processPath = path.dirname(process.argv[1]);
-global.yRead = {}; // 注册全局变量yRead
-var yRead = {};
+global.yRead = {};
 yRead.version = '0.0.1';
 
 serverDm.on('error', function (err) {
@@ -15,7 +14,7 @@ serverDm.on('error', function (err) {
     yRead.errlog.error(err);
 });
 serverDm.run(function() {
-    yRead.conf = module.exports.conf = require('./conf/conf'); // 注册rrestjs配置文件
+    yRead.conf = module.exports.conf = require('./conf/conf');
     yRead.module = {};
     yRead.module.rrestjs = require('rrestjs');
 /*    yRead.module.marked = require('marked');
@@ -33,12 +32,11 @@ serverDm.run(function() {
     yRead.dao = {};
     yRead.cache = {};
     yRead.api = {};
-
     creatServer();
 });
 
 function creatServer() {
-    http.createServer(function(req, res) {
+    var server = http.createServer(function(req, res) {
         var dm = domain.create();
         dm.on('error', function (err) {
             console.log(err);
@@ -61,8 +59,8 @@ function creatServer() {
                     yRead.errlog.error(err);
                     res.sendjson({
                         err: {
-                            name: '请求错误',
-                            message: '对不起，请求出错了！',
+                            name: 'Request Error',
+                            message: 'Sorry，Request Error!',
                             type: 'error',
                             url: '/'
                         }
@@ -93,5 +91,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(process.env.PORT);
+    }).listen(yRead.module.rrestjs.config.listenPort);
 };

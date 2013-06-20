@@ -18,7 +18,7 @@ module.exports = {
 	staticParse: true, //是否开启静态文件压缩整合功能
 	staticParseName: 'parse', //压缩整合功能的名称，例如用户可以'/static/?parse=/index.body.css|/index.user.css|/user.face.css'压缩整合成一个css响应给客户端
 	staticParseCacheTime: 1000 * 60 * 60, //压缩整合缓存时间，1小时
-	staticParseCacheFolder: '/tmp/web', //缓存整合功能的缓存文件夹
+	staticParseCacheFolder: '/tmp/static', //缓存整合功能的缓存文件夹
 	staticParseMaxNumber: 10, //整合压缩css或js文件的最大上限，建议不要超过15
 	uploadFolder: '/tmp/upload', //文件上传的临时目录
 	postLimit: 1024 * 1024 * 100, //限制上传的postbody大小，单位byte
@@ -26,7 +26,7 @@ module.exports = {
 	manualRouter: false, //手动路由，可以在这里设置手动路由的对象，详细见manualRouter.js
 	autoRouter: false, //自动路由，如果为false则表示关闭，如果为'/controller'，则表示默认去controller里寻找文件及方法，例如用户访问/user/face ，去回去controller文件下找到user.js执行face的方法传入req,res对象
 //cluster配置
-	isCluster: true, //是否开启多进程集群
+	isCluster: false, //是否开启多进程集群
 	isClusterAdmin: false, //进程监听管理功能是否开启
 	CLusterLog: true, //是否打开cluster自带的控制台信息，生产环境建议关闭
 	adminListenPort: 20910, //管理员监听端口号
