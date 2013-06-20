@@ -19,7 +19,7 @@
         "marked": ">=0.2.x"
     },
     "scripts": {
-        "start": "node app.js",
-        "dev": "node app.js -d"
+        "start": "node server.js -d",
+        "dev": "node server.js -d"
     }
 }

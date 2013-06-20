@@ -26,9 +26,9 @@ module.exports = {
 	manualRouter: false, //手动路由，可以在这里设置手动路由的对象，详细见manualRouter.js
 	autoRouter: false, //自动路由，如果为false则表示关闭，如果为'/controller'，则表示默认去controller里寻找文件及方法，例如用户访问/user/face ，去回去controller文件下找到user.js执行face的方法传入req,res对象
 //cluster配置
-	isCluster: false, //是否开启多进程集群
+	isCluster: true, //是否开启多进程集群
 	isClusterAdmin: false, //进程监听管理功能是否开启
-	CLusterLog: false, //是否打开cluster自带的控制台信息，生产环境建议关闭
+	CLusterLog: true, //是否打开cluster自带的控制台信息，生产环境建议关闭
 	adminListenPort: 20910, //管理员监听端口号
 	adminAuthorIp: /^127.0.0.1$/, //允许访问管理的IP地址
 	ClusterNum: 1, //开启的进程数

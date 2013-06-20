@@ -7,6 +7,7 @@ var domain = require('domain'),
 var serverDm = domain.create();
 var processPath = path.dirname(process.argv[1]);
 global.yRead = {}; // 注册全局变量yRead
+var yRead = {};
 yRead.version = '0.0.1';
 
 serverDm.on('error', function (err) {
@@ -37,7 +38,7 @@ serverDm.run(function() {
 });
 
 function creatServer() {
-    server = http.createServer(function(req, res) {
+    http.createServer(function(req, res) {
         var dm = domain.create();
         dm.on('error', function (err) {
             console.log(err);
@@ -90,7 +91,7 @@ function creatServer() {
                         res.send(data);
                     }));
                 }
-            }
-        });
-    }).listen(yRead.module.rrestjs.config.listenPort);
+            }//yRead.module.rrestjs.config.listenPort
+        });//process.env.PORT
+    }).listen(process.env.PORT);
 };
