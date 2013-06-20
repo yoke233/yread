@@ -19,7 +19,55 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 519,
+				"buffer_size": 3461,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/index.html",
+			"settings":
+			{
+				"buffer_size": 3380,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/js/app.js",
+			"settings":
+			{
+				"buffer_size": 413,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/partials/phone-list.html",
+			"settings":
+			{
+				"buffer_size": 746,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/partials/phone-detail.html",
+			"settings":
+			{
+				"buffer_size": 2746,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web/js/filters.js",
+			"settings":
+			{
+				"buffer_size": 177,
 				"line_ending": "Windows"
 			}
 		}
@@ -88,6 +136,12 @@
 	},
 	"file_history":
 	[
+		"/E/Dev/github/yread/web/js/filters.js",
+		"/E/Dev/github/yread/web/css/app.css",
+		"/E/Dev/github/yread/web/partials/phone-detail.html",
+		"/E/Dev/github/yread/web/phones/phones.json",
+		"/E/Dev/github/jsgen/static/index.html",
+		"/E/Dev/github/yread/web/css/bootmetro.css",
 		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
 		"/C/Users/yliu/AppData/Roaming/Sublime Text 2/Packages/User/JsFormat.sublime-settings",
 		"/E/Dev/github/yread/web/index.html",
@@ -104,7 +158,6 @@
 		"/E/Dev/github/jsgen/static/tpl/index.html",
 		"/E/Dev/github/yread/package.json",
 		"/E/Dev/github/jsgen/static/js/app.js",
-		"/E/Dev/github/jsgen/static/index.html",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/html5shiv.js",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/jquery.js",
 		"/C/Users/yliu/Downloads/twitter-bootstrap-v2.3.2-2-gde683e9/twitter-bootstrap-de683e9/docs/assets/js/application.js",
@@ -176,6 +229,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"jsGen",
+			"	",
+			"jsGen",
+			"		\n",
 			"	",
 			");\n",
 			"read",
@@ -205,6 +262,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"yRead",
+			"    ",
+			"yRead",
 			"    ",
 			"\\nLIBRARY_GENRES_",
 			"LIBRARY_GENRES_",
@@ -222,7 +282,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -230,21 +290,183 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 519,
+						"buffer_size": 3461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								519,
-								519
+								3391,
+								3391
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 990.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "web/index.html",
+					"settings":
+					{
+						"buffer_size": 3380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2929,
+								2929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 554.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "web/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "web/js/app.js",
+					"settings":
+					{
+						"buffer_size": 413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "web/partials/phone-list.html",
+					"settings":
+					{
+						"buffer_size": 746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "web/partials/phone-detail.html",
+					"settings":
+					{
+						"buffer_size": 2746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "web/js/filters.js",
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -288,7 +510,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 211.0
+		"height": 140.0
 	},
 	"output.git":
 	{

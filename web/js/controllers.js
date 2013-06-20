@@ -2,21 +2,24 @@
 
 /* Controllers */
 
-function PhoneListCtrl($scope, $http) {
-  $http.get('web/phones/phones.json').success(function(data) {
-    $scope.phones = data;
-  });
-
-  $scope.orderProp = 'age';
+function PhoneListCtrl($scope, Phone) {
+    $scope.phones = Phone.query();
+    $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
+//PhoneListCtrl.$inject = ['$scope', 'Phone'];
 
 
-function PhoneDetailCtrl($scope, $routeParams, $http) {
-  $http.get('web/phones/' + $routeParams.phoneId + '.json').success(function(data) {
-    $scope.phone = data;
-  });
+function PhoneDetailCtrl($scope, $routeParams, Phone) {
+    $scope.phone = Phone.get({
+        phoneId: $routeParams.phoneId
+    }, function(phone) {
+        $scope.mainImageUrl = 'web/' + phone.images[0];
+    });
+
+    $scope.setImage = function(imageUrl) {
+        $scope.mainImageUrl = imageUrl;
+    }
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
+//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];
