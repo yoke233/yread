@@ -3,12 +3,15 @@
     <div class="span2">
       <!--Sidebar content-->
 
-      Search: <input ng-model="query">
+      Search: <input class="span12" ng-model="query">
       Sort by:
-      <select ng-model="orderProp">
+      <select class="span12" ng-model="orderProp">
         <option value="name">Alphabetical</option>
         <option value="age">Newest</option>
       </select>
+      <div class="progress progress-indeterminate">
+        <div class="win-ring small"></div>
+      </div>
 
     </div>
     <div class="span10">
@@ -16,8 +19,8 @@
 
       <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
-          <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{'web/'+phone.imageUrl}}"></a>
-          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+          <a href="/phones/{{phone.id}}" class="thumb"><img ng-src="{{'/web/'+phone.imageUrl}}"></a>
+          <a href="/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
         </li>
       </ul>

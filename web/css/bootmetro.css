@@ -7150,6 +7150,16 @@ AppBar control.
 
 .toast-object {
   display: block;
+  width: 90px;
+  height: 90px;
+}
+
+.toast-object[class*="icon-"] {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  font-size: 90px;
+  line-height: 90px;
 }
 
 .toast-heading {
@@ -8651,6 +8661,8 @@ Progress control. */
 }
 
 .listview-item:hover {
+  color: #ffffff;
+  text-decoration: none;
   cursor: pointer;
   border: solid 3px #225a68;
 }

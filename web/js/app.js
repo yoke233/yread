@@ -3,10 +3,10 @@
 /* App Module */
 
 angular.module('phonecat', ['phonecatFilters', 'phonecatServices']).
-config(['$routeProvider',
-    function($routeProvider) {
+config(['$routeProvider','$locationProvider',
+    function($routeProvider, $locationProvider) {
         $routeProvider.
-        when('/phones', {
+        when('/', {
             templateUrl: '/web/partials/phone-list.html',
             controller: PhoneListCtrl
         }).
@@ -15,7 +15,8 @@ config(['$routeProvider',
             controller: PhoneDetailCtrl
         }).
         otherwise({
-            redirectTo: '/phones'
+            redirectTo: '/'
         });
+        $locationProvider.html5Mode(true);
     }
 ]);
