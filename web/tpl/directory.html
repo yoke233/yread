@@ -1,0 +1,12 @@
+<h3 class="text-center">
+    {{articles.book.title + '-' + articles.book.author}}
+</h3>
+<table class="table table-cell-hover">
+    <tbody>
+    <tr ng-repeat="row in articles.array">
+        <td ng-repeat="art in row">
+            <a href="{{'/art_'+art._id}}">{{art.title}}</a>
+        </td>
+    </tr>
+    </tbody>
+</table>

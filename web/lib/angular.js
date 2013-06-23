@@ -610,7 +610,7 @@ function copy(source, destination){
     }
   } else {
     if (source === destination) throw Error("Can't copy equivalent objects or arrays");
-    if (isArray(source)) {
+    if (isArray(source) && isArray(destination)) {
       destination.length = 0;
       for ( var i = 0; i < source.length; i++) {
         destination.push(copy(source[i]));
@@ -9887,7 +9887,7 @@ function $HttpProvider() {
      *    - **withCredentials** - `{boolean}` - whether to to set the `withCredentials` flag on the
      *      XHR object. See {@link https://developer.mozilla.org/en/http_access_control#section_5
      *      requests with credentials} for more information.
-     *    - **responseType** - `{string}` - see {@link
+     *    - **responseType** - `{string}` - see {@link}
      *      https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest#responseType requestType}.
      *
      * @returns {HttpPromise} Returns a {@link ng.$q promise} object with the

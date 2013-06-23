@@ -17,21 +17,27 @@ serverDm.run(function() {
     yRead.conf = module.exports.conf = require('./conf/conf');
     yRead.module = {};
     yRead.module.rrestjs = require('rrestjs');
-/*    yRead.module.marked = require('marked');
     yRead.module.mongoskin = require('mongoskin');
+/*    yRead.module.marked = require('marked');
     yRead.module.nodemailer = require('nodemailer');*/
     yRead.errlog = yRead.module.rrestjs.restlog;
     yRead.lib = {};
-/*    yRead.lib.tools = require('./lib/tools.js');
+    yRead.lib.tools = require('./lib/tools.js');
     yRead.lib.CacheLRU = require('./lib/cacheLRU.js');
     yRead.lib.CacheTL = require('./lib/cacheTL.js');
     yRead.lib.msg = require('./lib/msg.js');
-    yRead.lib.json = require('./lib/json.js');
+    yRead.lib.model = require('./lib/model.js');
     yRead.lib.converter = require('./lib/anyBaseConverter.js');
-    yRead.lib.email = require('./lib/email.js');*/
+    yRead.lib.email = require('./lib/email.js');
     yRead.dao = {};
+    yRead.dao.db = require('./dao/mongoDao.js').db;
+    yRead.dao.articleDao = require('./dao/articleDao.js');
+    yRead.dao.bookDao = require('./dao/bookDao.js');
     yRead.cache = {};
     yRead.api = {};
+    yRead.api.book = require('./api/book.js');
+    yRead.api.art = require('./api/article.js');
+    yRead.api.dir = require('./api/directory.js');
     creatServer();
 });
 
@@ -76,9 +82,6 @@ function creatServer() {
         dm.run(function () {
             if (req.path[0] === 'api' && yRead.api[req.path[1]]) {
                 yRead.api[req.path[1]][req.method.toUpperCase()](req, res, dm);
-                if (req.path[1] === 'index') {
-                    yRead.api.index.updateOnlineCache(req);
-                }
             } else {
                 res.setHeader("Content-Type", "text/html");
                 if (yRead.indexTpl) {

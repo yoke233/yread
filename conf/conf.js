@@ -5,7 +5,7 @@ module.exports = {
 	 * 注意，所有的路径配置的前面请加‘/’而后面不要加'/'！
 	 */
 //通用配置
-	server: 'yread',
+	server: 'yRead',
 	poweredBy: 'node.js yoke',
 	listenPort: 3000, //监听端口，如果配合clusterplus监听多个端口，这里也可以使用[3000, 3001, 3002, 3003]数组形式，rrestjs会智能分析
 	//baseDir: path.join(__dirname, '/..'), //绝对目录地址，下面的目录配置都是根据这个目录的相对地址，这里是根据config文件进行配置地址
@@ -18,7 +18,7 @@ module.exports = {
 	staticParse: true, //是否开启静态文件压缩整合功能
 	staticParseName: 'parse', //压缩整合功能的名称，例如用户可以'/static/?parse=/index.body.css|/index.user.css|/user.face.css'压缩整合成一个css响应给客户端
 	staticParseCacheTime: 1000 * 60 * 60, //压缩整合缓存时间，1小时
-	staticParseCacheFolder: '/tmp/tpl', //缓存整合功能的缓存文件夹
+	staticParseCacheFolder: '/tmp/static', //缓存整合功能的缓存文件夹
 	staticParseMaxNumber: 10, //整合压缩css或js文件的最大上限，建议不要超过15
 	uploadFolder: '/tmp/upload', //文件上传的临时目录
 	postLimit: 1024 * 1024 * 100, //限制上传的postbody大小，单位byte
@@ -45,7 +45,7 @@ module.exports = {
 	isSession: false, //是否开启session，开启会影响性能。
 	syncSession: false, //当多进程时是否开启session同步，开启会影响性能。
 	sepSession: false, //是否使用分割session，比如使用数组['/client','/admin','/pay']表示三个访问目录使用不同的session
-	sessionName: 'yreadSid', //保存session id 的cookie 的name
+	sessionName: 'yReadSid', //保存session id 的cookie 的name
 	sessionExpire: false, //false表示会话session，否则填入1000*60，表示session有效1分钟
 	clearSessionSetInteval: 1000 * 60 * 60, //自动清理垃圾session时间，建设设置为1小时
 	clearSessionTime: 1000 * 60 * 60 * 24, //会话session超时，建议设置为1天
@@ -75,7 +75,7 @@ module.exports = {
 	MongodbConnectString: false, //是否使用字符串连接，日入nae的连接方法，这个优先级高于地址+端口
 	MongodbConnectTimeout: 1000 * 30, //连接超时
 	MongodbMaxConnect: 50, //连接池连接数
-	MongodbDefaultDbName: 'yread', //默认使用的数据库名
+	MongodbDefaultDbName: 'yRead', //默认使用的数据库名
 	poolLogger: false, //是否记录连接池的日志，建议关闭
 //自动加载模块 配置
 	AutoRequire: false, //是否开启模块自动加载，加载只有的模块可以使用  rrest.mod.模块名 来进行调用

@@ -4,6 +4,7 @@ var mongoIp = yRead.conf.MongodbIp || '127.0.0.1',
 
 module.exports = {
     db: yRead.module.mongoskin.db(mongoIp + ':' + mongoPort + '/?auto_reconnect=true', {
-        database: mongoDbName
+        database: mongoDbName,
+        safe:true
     })
 }
