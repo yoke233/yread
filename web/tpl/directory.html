@@ -3,7 +3,7 @@
 </h3>
 <table class="table table-cell-hover">
     <tbody>
-    <tr ng-repeat="row in articles.array">
+    <tr ng-repeat="row in articles.array | dirFilter:4">
         <td ng-repeat="art in row">
             <a href="{{'/art_'+art._id}}">{{art.title}}</a>
         </td>

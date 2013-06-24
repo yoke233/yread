@@ -2,38 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6611ce89-db7c-4d63-86dd-e8654140564a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/lib/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tpl/article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/article.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/book.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/bookDao.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/tpl/directory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/directory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/yoke.xml" />
-      <change type="DELETED" beforePath="E:\github\yread\lib\json.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\yread\web\partials\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\yread\web\tpl\.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/angular.js" afterPath="$PROJECT_DIR$/web/lib/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/app.js" afterPath="$PROJECT_DIR$/web/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/articleDao.js" afterPath="$PROJECT_DIR$/dao/articleDao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/conf.js" afterPath="$PROJECT_DIR$/conf/conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/controllers.js" afterPath="$PROJECT_DIR$/web/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/mongoDao.js" afterPath="$PROJECT_DIR$/dao/mongoDao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partials/phone-list.html" afterPath="$PROJECT_DIR$/web/partials/phone-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/services.js" afterPath="$PROJECT_DIR$/web/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDao.js" afterPath="$PROJECT_DIR$/testDao.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tpl/directory.html" afterPath="$PROJECT_DIR$/web/tpl/directory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/directory.js" afterPath="$PROJECT_DIR$/api/directory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/filters.js" afterPath="$PROJECT_DIR$/web/js/filters.js" />
     </list>
     <ignored path="yread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371969229103" ignored="false" />
+    <file path="/Dummy.txt" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1372074980349" ignored="false" />
     <file path="/a.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371824273852" ignored="false" />
     <file path="/testDao.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371967274651" ignored="false" />
     <file path="/index.html" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371970334181" ignored="false" />
@@ -47,7 +22,7 @@
     <file path="/article.html" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371968297527" ignored="false" />
     <file path="/model.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371916570709" ignored="false" />
     <file path="/art.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371918435742" ignored="false" />
-    <file path="/directory.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371964942419" ignored="false" />
+    <file path="/directory.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1372076370204" ignored="false" />
     <file path="/app.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371965096234" ignored="false" />
     <file path="/controllers.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371965136865" ignored="false" />
     <file path="/services.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371965194085" ignored="false" />
@@ -55,6 +30,7 @@
     <file path="/bookDao.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371964580155" ignored="false" />
     <file path="/directory.html" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371965073939" ignored="false" />
     <file path="/article.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1371965387168" ignored="false" />
+    <file path="/filters.js" changelist="6611ce89-db7c-4d63-86dd-e8654140564a" time="1372076265239" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,19 +77,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
+      <file leaf-file-name="directory.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/directory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+            <state line="13" column="16" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="directory.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/tpl/directory.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.5294118">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.WebIde50/system/extLibs/nodejs-v0.10.11-src/core-modules-sources/lib/net.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="439" column="13" selection-start="11672" selection-end="11672" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/filters.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="220" selection-end="229" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="23" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.3119266">
+            <state line="39" column="7" selection-start="3396" selection-end="3396" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -123,15 +126,6 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="21" selection-start="1296" selection-end="1303" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articleDao.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/articleDao.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="2" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,11 +150,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/phones/asd.json" />
         <option value="$PROJECT_DIR$/web/tpl/book.html" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/api/directory.js" />
-        <option value="$PROJECT_DIR$/web/tpl/directory.html" />
         <option value="$PROJECT_DIR$/dao/bookDao.js" />
         <option value="$PROJECT_DIR$/api/article.js" />
         <option value="$PROJECT_DIR$/dao/articleDao.js" />
@@ -172,6 +163,9 @@
         <option value="$PROJECT_DIR$/web/lib/angular.js" />
         <option value="$PROJECT_DIR$/web/js/app.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/js/filters.js" />
+        <option value="$PROJECT_DIR$/api/directory.js" />
+        <option value="$PROJECT_DIR$/web/tpl/directory.html" />
       </list>
     </option>
   </component>
@@ -273,7 +267,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="tpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,7 +281,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,13 +296,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Errors" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -350,9 +348,9 @@
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.server" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.testDao.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.testGet.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.testGet.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.server" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.testDao.js" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -389,7 +387,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -398,7 +396,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5026061" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3327645" sideWeight="0.4973939" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3327645" sideWeight="0.4973939" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -472,46 +470,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/directory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="118" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testGet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/articleDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="2" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="1296" selection-end="1303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="12" selection-start="949" selection-end="957" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="12" selection-start="949" selection-end="957" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/services.js">
@@ -524,20 +485,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/lib/angular-resource.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/lib/angular.js">
@@ -549,9 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/lib/angular-sanitize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/app.js">
@@ -568,6 +516,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="7" selection-start="3396" selection-end="3396" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/phone-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="35" selection-start="202" selection-end="202" vertical-scroll-proportion="0.23391813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="561" selection-end="576" vertical-scroll-proportion="0.61452514">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/tpl/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="28" selection-start="81" selection-end="81" vertical-scroll-proportion="-1.875">
@@ -575,9 +544,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/api/directory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.3119266">
+        <state line="13" column="16" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="220" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebIde50/system/extLibs/nodejs-v0.10.11-src/core-modules-sources/lib/net.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="439" column="13" selection-start="11672" selection-end="11672" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tpl/directory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.5294118">
           <folding />
         </state>
       </provider>
