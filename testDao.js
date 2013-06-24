@@ -24,7 +24,7 @@ var bookDao = db.bind('book', {
     },
 
     getLatestId: function (callback) {
-        that.findOne({}, {
+        bookDao.findOne({}, {
             sort: {
                 _id: -1
             },

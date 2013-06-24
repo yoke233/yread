@@ -37,7 +37,9 @@ var that = yRead.dao.db.bind('article', {
         }, {
             fields: {
                 title: 1,
-                content: 1
+                content: 1,
+                book_id: 1,
+                index: 1
             }
         }, callback);
     }

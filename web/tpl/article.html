@@ -1,5 +1,21 @@
 <h3 class="text-center">
     {{article.title}}
 </h3>
+<br/>
+<hr/>
 <p ng-bind-html="article.content">
 </p>
+<div class="pagination pagination-centered">
+    <ul>
+        <li>
+            <a id="last" href="{{last}}" >上一页</a>
+        </li>
+        <li>
+            <a id="dir" href="{{dir}}">回目录</a>
+        </li>
+        <li>
+            <a id="next" href="{{next}}">下一页</a>
+        </li>
+    </ul>
+</div>
+<shortcut></shortcut>

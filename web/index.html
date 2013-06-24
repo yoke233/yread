@@ -26,16 +26,20 @@
       '/web/js/filters.js',
       '/web/js/app.js',
       '/web/js/controllers.js',
+      '/web/js/directives.js',
       '/web/js/services.js',
-      '/web/lib/angular-resource.min.js'
+      '/web/lib/angular-resource.min.js',
+      '/web/lib/ui-utils.min.js'
     ], function() {
-        $script('/web/lib/angular-sanitize.js',function(){
+        $script([
+                '/web/lib/angular-sanitize.js'
+            ],function(){
             // when all is done, execute bootstrap angular application
             angular.bootstrap(document, ['phonecat']);
         })
     });
   </script>
-  <title>Yoke Reader</title>
+  <title ng-bind="pageTitle"></title>
   <link rel="stylesheet" href="/web/?parse=/web/css/app.css|/web/css/bootmetro.css|/web/css/prettify.css" type="text/css">
 </head>
 <body>

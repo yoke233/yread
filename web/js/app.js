@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('phonecat', ['phonecatFilters', 'phonecatServices','ngSanitize']).
+angular.module('phonecat', ['phonecatFilters', 'phonecatServices', 'yRead.directives', 'ngSanitize', 'ui.keypress']).
     config(['$routeProvider', '$locationProvider',
         function ($routeProvider, $locationProvider) {
             $locationProvider.html5Mode(true);
@@ -27,4 +27,9 @@ angular.module('phonecat', ['phonecatFilters', 'phonecatServices','ngSanitize'])
                     redirectTo: '/phones'
                 });
         }
-    ]);
+    ]).
+    run(['$rootScope', function ($rootScope) {
+        window.yRead = {};
+        yRead.rootScope = $rootScope;
+        yRead.rootScope.pageTitle = "Reader yoke's";
+    }]);
