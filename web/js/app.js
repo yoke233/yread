@@ -24,7 +24,7 @@ angular.module('phonecat', ['phonecatFilters', 'phonecatServices', 'yRead.direct
                     controller: PhoneDetailCtrl
                 }).
                 otherwise({
-                    redirectTo: '/phones'
+                    redirectTo: '/dir1'
                 });
         }
     ]).

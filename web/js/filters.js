@@ -3,18 +3,19 @@
 /* Filters */
 
 angular.module('phonecatFilters', []).
-    filter('checkmark', function () {
+    filter('checkmark',function () {
         return function (input) {
             return input ? '\u2713' : '\u2718';
         };
     }).
-    filter('dirFilter', function () {
-        return function (input, num) {
-            var len = input.length / num;
-            var out = [];
-            for (var i = 0; i < len; i++) {
-                out.push(input.slice(i * num, i * num + num));
-            }
-            return out;
-        }
-    });
+    filter('range', function () {
+        return function (input, min, max) {
+            min = parseInt(min); //Make string input int
+            max = parseInt(max);
+            for (var i = min; i < max; i++)
+                input.push(i);
+            return input;
+        };
+    })
+
+;

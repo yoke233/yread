@@ -3,10 +3,13 @@
 </h3>
 <table class="table table-cell-hover">
     <tbody>
-    <tr ng-repeat="row in articles.array | dirFilter:4">
+    <tr ng-repeat="row in arr">
         <td ng-repeat="art in row">
             <a href="{{'/art_'+art._id}}">{{art.title}}</a>
         </td>
     </tr>
     </tbody>
 </table>
+<div class="btn-group">
+    <button class="btn" ng-repeat="i in [] | range:0:total" ng-click="changePage(i)">{{i+1}}</button>
+</div>
