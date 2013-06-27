@@ -19,12 +19,16 @@ angular.module('phonecat', ['phonecatFilters', 'phonecatServices', 'yRead.direct
                     templateUrl: '/web/tpl/article.html',
                     controller: ArticleCtrl
                 }).
+                when('/list', {
+                    templateUrl: '/web/tpl/list.html',
+                    controller: ListCtrl
+                }).
                 when('/phones/:phoneId', {
                     templateUrl: '/web/partials/phone-detail.html',
                     controller: PhoneDetailCtrl
                 }).
                 otherwise({
-                    redirectTo: '/dir1'
+                    redirectTo: '/list'
                 });
         }
     ]).

@@ -1,6 +1,6 @@
 var mongoskin = require('mongoskin');
 
-var db = mongoskin.db('localhost/yRead?auto_reconnect=true', {safe: false});
+var db = mongoskin.db('yokedb:asd123@ds029778.mongolab.com:29778/yread?auto_reconnect=true', {safe: false});
 var IDString = require('./lib/model.js').IDString;
 
 var bookDao = db.bind('book', {

@@ -27,9 +27,18 @@ var that = yRead.dao.db.bind('book', {
                 author: 1
             }
         }, callback);
+    },
+    getBooks: function (callback) {
+        that.find({}, {
+            fields: {
+                title: 1,
+                _id: 1
+            }
+        }).toArray(callback);
     }
 });
 
 module.exports = {
-    getBookTitle: that.getBookTitle
+    getBookTitle: that.getBookTitle,
+  getBooks: that.getBooks
 };

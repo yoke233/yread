@@ -1,16 +1,18 @@
-var articleDao = yRead.dao.articleDao;
+var bookDao = yRead.dao.bookDao;
 
-function getArticle(req, res, dm) {
+function getBook(req, res, dm) {
     var book_id = req.path[2];
-    articleDao.getArticles(book_id, dm.intercept(function (articlesList) {
-        res.sendjson(articlesList);
-    }))
+    if(!book_id){
+      bookDao.getBooks(dm.intercept(function (books) {
+        res.sendjson(books);
+      }));
+    }
 }
 
 function getFn(req, res, dm) {
     switch (req.path[2]) {
         default:
-            return getArticle(req, res, dm);
+            return getBook(req, res, dm);
     }
 }
 

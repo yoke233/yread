@@ -3,7 +3,7 @@
 #############
 
 node_modules/
-
+.c9revisions
 
 #################
 ## Eclipse
@@ -13,7 +13,7 @@ node_modules/
 .project
 .metadata
 bin/
-tmp/
+#tmp/
 *.tmp
 *.bak
 *.swp

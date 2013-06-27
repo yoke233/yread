@@ -1,4 +1,4 @@
-var url1 = 'http://www.qingdi.com/book/3697.html';
+var url1 = 'http://www.qingdi.com/book/922.html';
 var crawler = require('crawler').Crawler;
 
 var model = require('./lib/model.js');

@@ -22,6 +22,17 @@ angular.module('phonecatServices', ['ngResource']).
             }
         });
     }]).
+    factory('Book', ['$resource', function ($resource) {
+        return $resource('/api/book/:BID', {}, {
+            list: {
+                method: 'GET',
+                params: {
+                    BID: 'all'
+                },
+                isArray: true
+            }
+        });
+    }]).
     factory('Article', ['$resource', function ($resource) {
         return $resource('/api/art/:AID', {}, {
         });

@@ -67,6 +67,14 @@ function PhoneListCtrl($scope, Phone) {
 PhoneListCtrl.$inject = ['$scope', 'Phone'];
 
 
+function ListCtrl($scope, Book) {
+    $scope.books = Book.query();
+    yRead.rootScope.pageTitle = '书列表';
+}
+
+ListCtrl.$inject = ['$scope', 'Book'];
+
+
 function PhoneDetailCtrl($scope, $routeParams, Phone) {
     $scope.phone = Phone.get({
         phoneId: $routeParams.phoneId
