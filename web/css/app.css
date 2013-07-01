@@ -77,3 +77,42 @@ ul.specs dt {
 h1 {
   border-bottom: 1px solid gray;
 }
+
+#alerts-container {
+   position: fixed;
+   top: 5px;
+   right: 5px;
+   padding: 0;
+   z-index: 1100;
+}
+ 
+#alerts-container .toast {
+   /* add a shadow */
+   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ The animate-enter prefix is the event name that you
+ have provided within the ngAnimate attribute.
+*/
+.animate-enter-setup {
+ -webkit-transition: 1s linear all; /* Safari/Chrome */
+ -moz-transition: 1s linear all; /* Firefox */
+ -ms-transition: 1s linear all; /* IE10 */
+ -o-transition: 1s linear all; /* Opera */
+ transition: 1s linear all; /* Future Browsers */
+ 
+ /* The animation preparation code */
+ opacity: 0;
+}
+ 
+/*
+ Keep in mind that you want to combine both CSS
+ classes together to avoid any CSS-specificity
+ conflicts
+*/
+.animate-enter-setup.animate-enter-start {
+ /* The animation code itself */
+ opacity: 1;
+}

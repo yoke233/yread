@@ -94,5 +94,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(yRead.module.rrestjs.config.listenPort);
+    }).listen(process.env.PORT);
 };

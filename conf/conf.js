@@ -76,8 +76,6 @@ module.exports = {
 	MongodbConnectTimeout: 1000 * 30, //连接超时
 	MongodbMaxConnect: 50, //连接池连接数
 	MongodbDefaultDbName: 'yread', //默认使用的数据库名
-  MongoDbUser: 'yokedb',
-  MongoDbPass: 'asd123',
 	poolLogger: false, //是否记录连接池的日志，建议关闭
 //自动加载模块 配置
 	AutoRequire: false, //是否开启模块自动加载，加载只有的模块可以使用  rrest.mod.模块名 来进行调用

@@ -1,11 +1,11 @@
 <h3 class="text-center">
     {{article.title}}
 </h3>
-<br/>
-<hr/>
-<p ng-bind-html="article.content">
+
+<hr ng-show="yRead.loaded"/>
+<p ng-bind-html="article.content"">
 </p>
-<div class="pagination pagination-centered  pagination-large">
+<div ng-show="yRead.loaded" class="pagination pagination-centered">
     <ul>
         <li>
             <a id="last" href="{{last}}" >上一页</a>

@@ -35,5 +35,15 @@ angular.module('phonecat', ['phonecatFilters', 'phonecatServices', 'yRead.direct
     run(['$rootScope', function ($rootScope) {
         window.yRead = {};
         yRead.rootScope = $rootScope;
-        yRead.rootScope.pageTitle = "Reader yoke's";
+        yRead.rootScope.pageTitle = "yoke's Reader";
+        
+        $rootScope.asdasd = function (){
+            if ($) {
+                var dom = $('#alerts-container');
+                var $toast = $('#toast-example1').clone();
+                dom.append($toast.addClass('in'));
+            }else{
+                alert('aaa');
+            }
+        }
     }]);

@@ -2,8 +2,8 @@
   font-family: 'IcoMoon';
   font-style: normal;
   font-weight: normal;
-  src: url('../font/IcoMoon.eot');
-  src: url('../font/IcoMoon.svg#IcoMoon') format('svg'), url('../font/IcoMoon.eot?#iefix') format('embedded-opentype'), url('../font/IcoMoon.woff') format('woff'), url('../font/IcoMoon.ttf') format('truetype');
+  src: url('/web/font/IcoMoon.eot');
+  src: url('/web/font/IcoMoon.svg#IcoMoon') format('svg'), url('/web/font/IcoMoon.eot?#iefix') format('embedded-opentype'), url('/web/font/IcoMoon.woff') format('woff'), url('/web/font/IcoMoon.ttf') format('truetype');
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
