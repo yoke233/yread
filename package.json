@@ -11,7 +11,8 @@
     "homepage": "https://github.com/yoke233/yread",
     "main": "app.js",
     "engines": {
-        "node": ">=0.10.x"
+        "node": "0.10.x",
+        "npm":  "1.2.x"
     },
     "dependencies": {
         "rrestjs": ">=1.x.x",
