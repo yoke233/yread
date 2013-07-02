@@ -6,6 +6,8 @@ var domain = require('domain'),
     zlib = require('zlib');
 var serverDm = domain.create();
 var processPath = path.dirname(process.argv[1]);
+var ipaddr = process.env.OPENSHIFT_NODEJS_IP || process.env.IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000;
 global.yRead = {};
 yRead.version = '0.0.1';
 
@@ -39,7 +41,6 @@ serverDm.run(function() {
     yRead.api.book = require('./api/book.js');
     yRead.api.art = require('./api/article.js');
     yRead.api.dir = require('./api/directory.js');
-    console.log(process.env.OPENSHIFT_INTERNAL_PORT+'..'+process.env.OPENSHIFT_INTERNAL_IP);
     creatServer();
 });
 
@@ -96,5 +97,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(process.env.PORT);
+    }).listen(port,ipaddr);
 };
