@@ -95,5 +95,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(process.env.OPENSHIFT_INTERNAL_PORT, process.env.OPENSHIFT_INTERNAL_IP);
+    }).listen(process.env.OPENSHIFT_NODEJS_PORT , process.env.OPENSHIFT_NODEJS_IP );
 };
