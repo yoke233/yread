@@ -13,6 +13,7 @@ function _setup_path_and_remove_wrappers() {
    setup_path_for_custom_node_version
    unset node
    unset npm
+   echo "11111111111111  - unset npm"
    unset _setup_path_and_remove_wrappers
 
 }  #  End of function  _setup_path_and_remove_wrappers.
