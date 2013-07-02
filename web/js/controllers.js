@@ -27,7 +27,7 @@ DirectoryCtrl.$inject = ['$scope', '$routeParams', 'Directory'];
 
 function ArticleCtrl($scope, $location, $routeParams, Article) {
     var cc = 0;
-    yRead.loaded = false;
+    $scope.loaded = false;
     $scope.article = Article.get({
         AID: $routeParams.AID
     }, function(art) {
@@ -38,7 +38,7 @@ function ArticleCtrl($scope, $location, $routeParams, Article) {
         yRead.rootScope.pageTitle = art.title;
         cc = art.index;
         yRead.currentIndex = cc;
-        yRead.loaded = true;
+        $scope.loaded = true;
         console.log('loadOk' + cc);
     });
 

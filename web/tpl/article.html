@@ -2,10 +2,10 @@
     {{article.title}}
 </h3>
 
-<hr ng-show="yRead.loaded"/>
+<hr ng-show="loaded"/>
 <p ng-bind-html="article.content"">
 </p>
-<div ng-show="yRead.loaded" class="pagination pagination-centered">
+<div ng-show="loaded" class="pagination pagination-centered">
     <ul>
         <li>
             <a id="last" href="{{last}}" >上一页</a>
