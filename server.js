@@ -38,6 +38,7 @@ serverDm.run(function() {
     yRead.api.book = require('./api/book.js');
     yRead.api.art = require('./api/article.js');
     yRead.api.dir = require('./api/directory.js');
+    console.log(process.env.OPENSHIFT_INTERNAL_PORT+'..'+process.env.OPENSHIFT_INTERNAL_IP);
     creatServer();
 });
 
@@ -94,5 +95,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(process.env.OPENSHIFT_NODEJS_PORT);
+    }).listen(process.env.OPENSHIFT_INTERNAL_PORT, process.env.OPENSHIFT_INTERNAL_IP);
 };
