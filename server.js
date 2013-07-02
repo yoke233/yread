@@ -11,6 +11,7 @@ yRead.version = '0.0.1';
 
 serverDm.on('error', function (err) {
     delete err.domain;
+    console.error(err);
     yRead.errlog.error(err);
 });
 serverDm.run(function() {
@@ -95,5 +96,5 @@ function creatServer() {
                 }
             }//yRead.module.rrestjs.config.listenPort
         });//process.env.PORT
-    }).listen(process.env.OPENSHIFT_NODEJS_PORT , process.env.OPENSHIFT_NODEJS_IP );
+    }).listen(process.env.PORT);
 };

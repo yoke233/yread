@@ -55,7 +55,7 @@ module.exports = {
 	isZlib: true, //是否开启delate和gizp压缩，大并发压缩虽然可以减少传输字节数，但是会影响性能
 	ZlibArray: ['text/plain', 'application/javascript', 'text/css', 'application/xml', 'text/html'], //只压缩数组中的content-type响应
 //logger log4js 配置
-	isLog: true, //是否开启日志，过多的记录日志会影响性能，但是能记录系统运行情况
+	isLog: false, //是否开启日志，过多的记录日志会影响性能，但是能记录系统运行情况
 	logLevel: 'debug', //['trace','debug','info','warn','error', 'fatal'] 日志等级
 	logPath: '/logs', // "/mylogs" 日志存放目录
 	logMaxSize: 1024 * 1024 * 10, //单个日志文件大小
