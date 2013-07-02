@@ -1,29 +1,35 @@
 {
-    "author": {
-        "name": "yoke",
-        "email": "yoke2012@gmail.com",
-        "url": "http://weibo.com/yokeb"
-    },
-    "name": "yread",
-    "version": "0.0.1",
-    "description": "",
-    "keywords": ["Node.js", "AngularJS", "mongoDB", "yread"],
-    "homepage": "https://github.com/yoke233/yread",
-    "main": "app.js",
-    "engines": {
-        "node": "0.10.x",
-        "npm":  "1.2.x"
-    },
-    "dependencies": {
-        "rrestjs": ">=1.x.x",
-        "mongoskin": ">=0.5.X",
-        "marked": ">=0.2.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/yoke233/yread.git"
-    },
-    "scripts": {
-        "start": "node server.js"
-    }
+  "name": "OpenShift-Sample-App",
+  "version": "1.0.0",
+  "description": "OpenShift Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url":  "http://openshift.redhat.com/"
+  },
+  "homepage": "http://openshift.redhat.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/openshift/crankcase"
+  },
+
+  "engines": {
+    "node": ">= 0.8.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "express": "*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
 }

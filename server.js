@@ -1,98 +1,179 @@
-module.exports.conf = require('./conf/conf');
-var domain = require('domain'),
-    http = require('http'),
-    fs = require('fs'),
-    path = require('path'),
-    zlib = require('zlib');
-var serverDm = domain.create();
-var processPath = path.dirname(process.argv[1]);
-global.yRead = {};
-yRead.version = '0.0.1';
+#!/bin/env node
+//  OpenShift sample Node application
+var express = require('express');
+var fs      = require('fs');
 
-serverDm.on('error', function (err) {
-    delete err.domain;
-    yRead.errlog.error(err);
-});
-serverDm.run(function() {
-    yRead.conf = module.exports.conf = require('./conf/conf');
-    yRead.module = {};
-    yRead.module.rrestjs = require('rrestjs');
-    yRead.module.mongoskin = require('mongoskin');
-/*    yRead.module.marked = require('marked');
-    yRead.module.nodemailer = require('nodemailer');*/
-    yRead.errlog = yRead.module.rrestjs.restlog;
-    yRead.lib = {};
-    yRead.lib.tools = require('./lib/tools.js');
-    yRead.lib.CacheLRU = require('./lib/cacheLRU.js');
-    yRead.lib.CacheTL = require('./lib/cacheTL.js');
-    yRead.lib.msg = require('./lib/msg.js');
-    yRead.lib.model = require('./lib/model.js');
-    yRead.lib.converter = require('./lib/anyBaseConverter.js');
-    yRead.lib.email = require('./lib/email.js');
-    yRead.dao = {};
-    yRead.dao.db = require('./dao/mongoDao.js').db;
-    yRead.dao.articleDao = require('./dao/articleDao.js');
-    yRead.dao.bookDao = require('./dao/bookDao.js');
-    yRead.cache = {};
-    yRead.api = {};
-    yRead.api.book = require('./api/book.js');
-    yRead.api.art = require('./api/article.js');
-    yRead.api.dir = require('./api/directory.js');
-    creatServer();
-});
 
-function creatServer() {
-    var server = http.createServer(function(req, res) {
-        var dm = domain.create();
-        dm.on('error', function (err) {
-            console.log(err);
-            delete err.domain;
-            err.type = 'error';
-            try {
-                res.on('finish', function () {
-                    //yRead.dao.db.close();
-                    process.nextTick(function () {
-                        dm.dispose();
-                    });
-                });
-                if (err.hasOwnProperty('name')) {
-                    res.sendjson({
-                        err: err
-                    });
-                } else {
-                    //console.log('ReqErr:******************');
-                    console.log(req.session + ':' + req.method + ':' + req.path);
-                    yRead.errlog.error(err);
-                    res.sendjson({
-                        err: {
-                            name: 'Request Error',
-                            message: 'Sorry，Request Error!',
-                            type: 'error',
-                            url: '/'
-                        }
-                    });
-                }
-            } catch (err) {
-                delete err.domain;
-                //console.log('CatchERR:******************');
-                yRead.errlog.error(err);
-                dm.dispose();
-            }
+/**
+ *  Define the sample application.
+ */
+var SampleApp = function() {
+
+    //  Scope.
+    var self = this;
+
+
+    /*  ================================================================  */
+    /*  Helper functions.                                                 */
+    /*  ================================================================  */
+
+    /**
+     *  Set up server IP address and port # using env variables/defaults.
+     */
+    self.setupVariables = function() {
+        //  Set the environment variables we need.
+        self.ipaddress = process.env.OPENSHIFT_NODEJS_IP ||
+                         process.env.OPENSHIFT_INTERNAL_IP;
+        self.port      = process.env.OPENSHIFT_NODEJS_PORT   ||
+                         process.env.OPENSHIFT_INTERNAL_PORT || 8080;
+
+        if (typeof self.ipaddress === "undefined") {
+            //  Log errors on OpenShift but continue w/ 127.0.0.1 - this
+            //  allows us to run/test the app locally.
+            console.warn('No OPENSHIFT_*_IP var, using 127.0.0.1');
+            self.ipaddress = "127.0.0.1";
+        };
+    };
+
+
+    /**
+     *  Populate the cache.
+     */
+    self.populateCache = function() {
+        if (typeof self.zcache === "undefined") {
+            self.zcache = { 'index.html': '' };
+        }
+
+        //  Local cache for static content.
+        self.zcache['index.html'] = fs.readFileSync('./index.html');
+    };
+
+
+    /**
+     *  Retrieve entry (content) from cache.
+     *  @param {string} key  Key identifying content to retrieve from cache.
+     */
+    self.cache_get = function(key) { return self.zcache[key]; };
+
+
+    /**
+     *  terminator === the termination handler
+     *  Terminate server on receipt of the specified signal.
+     *  @param {string} sig  Signal to terminate on.
+     */
+    self.terminator = function(sig){
+        if (typeof sig === "string") {
+           console.log('%s: Received %s - terminating sample app ...',
+                       Date(Date.now()), sig);
+           process.exit(1);
+        }
+        console.log('%s: Node server stopped.', Date(Date.now()) );
+    };
+
+
+    /**
+     *  Setup termination handlers (for exit and a list of signals).
+     */
+    self.setupTerminationHandlers = function(){
+        //  Process on exit and signals.
+        process.on('exit', function() { self.terminator(); });
+
+        // Removed 'SIGPIPE' from the list - bugz 852598.
+        ['SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGTRAP', 'SIGABRT',
+         'SIGBUS', 'SIGFPE', 'SIGUSR1', 'SIGSEGV', 'SIGUSR2', 'SIGTERM'
+        ].forEach(function(element, index, array) {
+            process.on(element, function() { self.terminator(element); });
         });
-        dm.run(function () {
-            if (req.path[0] === 'api' && yRead.api[req.path[1]]) {
-                yRead.api[req.path[1]][req.method.toUpperCase()](req, res, dm);
-            } else {
-                res.setHeader("Content-Type", "text/html");
-                if (yRead.indexTpl) {
-                    res.send(yRead.indexTpl);
-                } else {
-                    fs.readFile(processPath + '/web/index.html', 'utf8', serverDm.intercept(function (data) {
-                    //    yRead.indexTpl = data;
-                        res.send(data);
-                    }));
-                }
-            }//yRead.module.rrestjs.config.listenPort
-        });//process.env.PORT
-    }).listen(process.env.PORT);
-};
+    };
+
+
+    /*  ================================================================  */
+    /*  App server functions (main app logic here).                       */
+    /*  ================================================================  */
+
+    /**
+     *  Create the routing table entries + handlers for the application.
+     */
+    self.createRoutes = function() {
+        self.routes = { };
+
+        // Routes for /health, /asciimo, /env and /
+        self.routes['/health'] = function(req, res) {
+            res.send('1');
+        };
+
+        self.routes['/asciimo'] = function(req, res) {
+            var link = "http://i.imgur.com/kmbjB.png";
+            res.send("<html><body><img src='" + link + "'></body></html>");
+        };
+
+        self.routes['/env'] = function(req, res) {
+            var content = 'Version: ' + process.version + '\n<br/>\n' +
+                          'Env: {<br/>\n<pre>';
+            //  Add env entries.
+            for (var k in process.env) {
+               content += '   ' + k + ': ' + process.env[k] + '\n';
+            }
+            content += '}\n</pre><br/>\n'
+            res.send('<html>\n' +
+                     '  <head><title>Node.js Process Env</title></head>\n' +
+                     '  <body>\n<br/>\n' + content + '</body>\n</html>');
+        };
+
+        self.routes['/'] = function(req, res) {
+            res.set('Content-Type', 'text/html');
+            res.send(self.cache_get('index.html') );
+        };
+    };
+
+
+    /**
+     *  Initialize the server (express) and create the routes and register
+     *  the handlers.
+     */
+    self.initializeServer = function() {
+        self.createRoutes();
+        self.app = express();
+
+        //  Add handlers for the app (from the routes).
+        for (var r in self.routes) {
+            self.app.get(r, self.routes[r]);
+        }
+    };
+
+
+    /**
+     *  Initializes the sample application.
+     */
+    self.initialize = function() {
+        self.setupVariables();
+        self.populateCache();
+        self.setupTerminationHandlers();
+
+        // Create the express server and routes.
+        self.initializeServer();
+    };
+
+
+    /**
+     *  Start the server (starts up the sample application).
+     */
+    self.start = function() {
+        //  Start the app on the specific interface (and port).
+        self.app.listen(self.port, self.ipaddress, function() {
+            console.log('%s: Node server started on %s:%d ...',
+                        Date(Date.now() ), self.ipaddress, self.port);
+        });
+    };
+
+};   /*  Sample Application.  */
+
+
+
+/**
+ *  main():  Main code.
+ */
+var zapp = new SampleApp();
+zapp.initialize();
+zapp.start();
+
