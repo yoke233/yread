@@ -1,7 +1,7 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "yread",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "yoke's yread",
   "keywords": [
       "yread",
       "Node.js",
