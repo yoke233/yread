@@ -44,51 +44,32 @@
   <link rel="stylesheet" href="/web/?parse=/web/css/app.css|/web/css/bootmetro.css|/web/css/bootmetro-ui-light.css|/web/css/bootmetro-responsive.css|/web/css/bootmetro-icons.css|/web/css/prettify.css" type="text/css">
 </head>
 <body>
-<div id="alerts-container"></div>
 <div class="container">
-  <div class="row">
-    <div class="span12">
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
-                <a href="#" class="brand" ng-click="asdasd()">yRead</a>
-                <div class="nav-collapse collapse navbar-responsive-collapse">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="/list">list</a>
-                        </li>
-                    </ul>
-                    <ul class="nav pull-right">
-                        <li>
-                            <a href="#">null</a>
-                        </li>
-                    </ul>
+    <div class="row">
+        <div class="span12">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                        <a href="#" class="brand">yRead</a>
+                        <div class="nav-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="/list">list</a>
+                                </li>
+                            </ul>
+                            <ul class="nav pull-right">
+                                <li>
+                                    <a href="#">null</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div ng-view ng-directive ng-animate="{enter: 'animate-enter'}"></div>
         </div>
-    </div>
-    <div ng-view ng-directive ng-animate="{enter: 'animate-enter'}"></div>
-    </div>
-    <div id="toast-example1" class="toast toasttext02 fade">
-        <button type="button" class="close" data-dismiss="alert"></button>
-        <div class="pull-left">
-            <img class="toast-object" data-src="holder.js/90x90">
-        </div>
-        <div class="toast-body">
-            <h4 class="toast-heading">Toast heading</h4>
-            <p>Body text that wraps over two lines. Vivamus elementum semper nisi.</p>
-        </div>
-    </div>
     </div>
 </div>
-<script>
-    // toasts demo
-    var accc = function(e){
-       e.preventDefault();
-       var $toast = $( $(this).attr('href')).clone();
-       $('#alerts-container').append($toast.addClass('in'));
-    };
-</script>
 </body>
 </html>
